@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+html{
+  font-size:62.5%;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behaviour:smooth;
+
+  
+}
+body{
+  height:100%;
+  background-color:rgba(0,0,0,1);
+}
+.main{
+  display:flex;
+  height:100%;
+  
+}
+
+/* ##################Home styling######################## */
+
+.home{
+  width:80%;
+  height:100vh;
+  position:relative;
+  background-color:rgba(0,0,0,1)
+}
+
+.home-content{
+  width:70%;
+  padding:20px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%)
+  
+}
+.home-content .owner-img{
+    width: 45%;
+    height: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  margin-bottom:2rem;
+  box-shadow: 0 0 10px deeppink;
+  transition:all 0.4s ease-in-out;
+
+}
+
+.home-content .owner-img:hover{
+  
+  box-shadow: 4px -5px 11px deeppink;
+  
+  
+}
+
+.home-content .owner-img img{
+  width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+  transition:all 0.4s ease-in-out;
+}
+.home-content .owner-img img:hover{
+  transform:scale(1.1)
+}
+
+.home-content h1{
+  font-size:10rem;
+  color:#aa3364;  
+  letter-spacing:5px;
+  padding:10px;
+  margin-bottom:10px;
+  font-weight:400;
+}
+
+.home-content .text{
+  font-size:4rem;
+  color:white;
+  letter-spacing:4px;
+  padding:10px;
+}
+.text span{
+font-family: cursive;
+}
+
+.home-footer{
+  margin-top: 8rem;
+  color: white; 
+  display:flex;
+  justify-content:space-around;
+}
+.home-footer a{
+  text-decoration:none;
+  color: white;
+  font-size:4rem;
+  transition: all 0.4s ease-in-out;
+}
+.home-footer a:hover{
+  color:deeppink;
+}
+
+
+
+
+/* ###############################SideBar Styling################### */
+
+.sidebar{
+  
+  width:20%;
+  height:100%;
+  position:fixed;
+  left:80%;  
+  background-color:rgba(0,0,0,1 );
+}
+
+.sidebar-content{
+  
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  
+}
+
+
+.edu-box , .skill-box , .projects-box , .subject-box{
+      display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+
+
+
+.edu-box span , .skill-box span , .projects-box span , .subject-box span{
+  font-size:2rem;
+  color:white;
+  padding-top: 0.6rem;
+  margin-right:10px;
+}
+
+
+
+
+.sidebar .sidebar-content a{
+  font-size:4rem;
+  color:white;
+  transition:all 0.4s ease-in-out;
+}
+
+.sidebar .sidebar-content a:hover{
+      color:#aa3364;
+
+}
+
+
+
+
+
+@media all and (max-width:600px){
+
+  html{
+    font-size:8px;
+  }
+/*   .edu-box span , .skill-box span , .projects-box span , .subject-box span{
+  display:none;
+} */
+  .edu-box , .skill-box , .projects-box , .subject-box{
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  .edu-box span , .skill-box span , .projects-box span , .subject-box span{
+  font-size:1.2rem;
+    padding-bottom:10px;
+}
+  .home-content h1{
+  font-size:3rem;
+}
+
+  .home-content{
+    width: 73%;
+    height: 60%;
+    text-align: center;
+    /* margin-top: 10rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-content .owner-img{
+    align-self:center;
+
+  }
+  .home-content .text{
+  font-size:2.5rem;
+  
+}
+.home-footer{
+    margin-top:5rem;
+  }
+  
+  
+}
+
+@media all and (min-width:600px){
+
+  html{
+    font-size:8px;
+  }
+  .home-content{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .home-content .owner-img{
+    align-self:center;
+  }
+
+  .home-content h1{
+    font-size:5rem;
+    align-self:center;
+  }
+ .home-content .text{
+    font-size: 3rem;
+   text-align:center;
+  }
+  .home-footer{
+    margin-top:5rem;
+  }
+  
+}
+
+@media all and (min-width:913px){
+  .home-content .owner-img{
+    height:45%;
+  }
+}
+
