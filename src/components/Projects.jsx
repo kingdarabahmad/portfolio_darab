@@ -34,11 +34,11 @@ const Projects=()=>{
          img={portfolioImg}  title="Portfolio" tech="HTML, CSS, React.js" link={"https://portfolioresume.darab-ahmadahma.repl.co/"} delay={0.1}/>
         <ProjectCard
           style={{objectPosition:"top"}}
-          img={estoreImg} title="E-Store" tech="HTML, Tailwind CSS, React.js" link={"https://e-store-myapp.netlify.app"} delay={0.1}/>
+          img={estoreImg} title="E-Store" tech="HTML, Tailwind CSS, React.js" link={"https://e-comstore-app.netlify.app"} delay={0.1}/>
         <ProjectCard
           img={todoappImg} title="TODO App" tech="HTML, CSS, React.js" link={ "https://kingdarabahmad.github.io/todo-app/" } delay={0.1}/>
         <ProjectCard
-          img={weatherappImg} title="Weather App" tech="HTML, CSS, Javascript" link={"https://javascript19wheatherapiproject.darab-ahmadahma.repl.co/"} delay={0.1} />
+          img={weatherappImg} title="Weather App" tech="HTML, CSS, Javascript" link={"https://weather-app-darab.netlify.app"} delay={0.1} />
       
       </div>
       <div style={{marginBottom:"30px"}}>

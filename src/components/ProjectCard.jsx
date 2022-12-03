@@ -19,7 +19,7 @@ const ProjectCard=(props)=>{
 
     <h2>{props.title}</h2>
     <h2>Tech-Used:{props.tech}</h2>
-    <a href={props.link} target="blank" style={{textDecoration:"none", color:"deeppink"}}>See Live</a>
+    <a href={props.link} target="blank" style={{textDecoration:"none", color:"whitesmoke"}}>See Live</a>
       
     </div>
   
